@@ -2,11 +2,11 @@
 
 	class Conexion{
 
-		private $usuario="root";
-		private $contrasena="";
-		private $host="localhost";
-		private $baseDatos="promedio_bd";
-		private $puerto="3306";
+		private $usuario=getenv('USER_VAR');
+		private $contrasena=getenv('PASS_VAR');
+		private $host=getenv('HOST_VAR');
+		private $baseDatos=getenv('BASE_VAR');
+		private $puerto=getenv('PORT_VAR');
 		private $link;
 
 		public function __construct(){
