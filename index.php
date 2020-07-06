@@ -1,7 +1,10 @@
+<?php
+	$titulo = 'Promedio Uv'
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Promedio Uv</title>
+	<title><?php echo $titulo; ?></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
