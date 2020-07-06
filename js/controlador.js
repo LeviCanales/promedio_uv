@@ -6,8 +6,8 @@ cargarEstudiantes = function(){
 			success:function(resultado){
 				$("#promedio").html(resultado);
 			},
-			error:function(){
-				alert("No");
+			error:function(e){
+				alert(e);
 			}
 		});
 	}
