@@ -10,9 +10,9 @@
 		private $link;
 
 		public function __construct(){
-			$this->host=getenv('USER_VAR');
-			$this->usuario=getenv('PASS_VAR');
-			$this->contrasena=getenv('HOST_VAR');
+			$this->usuario=getenv('USER_VAR');
+			$this->contrasena=getenv('PASS_VAR');
+			$this->host=getenv('HOST_VAR');
 			$this->baseDatos=getenv('BASE_VAR');
 			$this->puerto=getenv('PORT_VAR');
 			$this->establecerConexion();			
