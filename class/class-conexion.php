@@ -6,7 +6,7 @@
 		private $usuario=$dbopts["user"];
 		private $contrasena=$dbopts["pass"];
 		private $host=$dbopts["host"];
-		private $baseDatos=ltrim($dbopts["path"],'/')
+		private $baseDatos=ltrim($dbopts["path"],'/');
 		private $puerto=$dbopts["port"];
 		private $link;
 
