@@ -1,8 +1,7 @@
 cargarEstudiantes = function(){
 		$.ajax({
 			url:"ajax/procesar.php?accion=1",
-			method: "GET",
-			dataType: "html",
+			method: "POST",
 			success:function(resultado){
 				$("#promedio").html(resultado);
 			},
