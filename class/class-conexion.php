@@ -1,7 +1,7 @@
 <?php
 
 	class Conexion{
-		$dbopts = parse_url(getenv('DATABASE_URL'));
+		private $dbopts = parse_url(getenv('DATABASE_URL'));
 
 		private $usuario=$dbopts["user"];
 		private $contrasena=$dbopts["pass"];
