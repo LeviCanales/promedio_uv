@@ -1,14 +1,14 @@
 <?php
 
 	class Conexion{
-		private $dbopts = parse_url(getenv('DATABASE_URL'));
+		protected $dbopts = parse_url(getenv('DATABASE_URL'));
 
-		private $usuario=$dbopts["user"];
-		private $contrasena=$dbopts["pass"];
-		private $host=$dbopts["host"];
-		private $baseDatos=ltrim($dbopts["path"],'/');
-		private $puerto=$dbopts["port"];
-		private $link;
+		protected $usuario=$dbopts["user"];
+		protected $contrasena=$dbopts["pass"];
+		protected $host=$dbopts["host"];
+		protected $baseDatos=ltrim($dbopts["path"],'/');
+		protected $puerto=$dbopts["port"];
+		protected $link;
 
 		public function __construct(){
 			$this->establecerConexion();			
