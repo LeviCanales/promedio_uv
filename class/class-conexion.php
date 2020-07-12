@@ -2,11 +2,11 @@
 
 	class Conexion{
 
-		private $usuario=$_ENV('USER_VAR');
-		private $contrasena=$_ENV('PASS_VAR');
-		private $host=$_ENV('HOST_VAR');
-		private $baseDatos=$_ENV('BASE_VAR');
-		private $puerto=$_ENV('PORT_VAR');
+		private $usuario=getenv('USERVAR');
+		private $contrasena=getenv('PASSVAR');
+		private $host=getenv('HOSTVAR');
+		private $baseDatos=getenv('BASEVAR');
+		private $puerto=getenv('PORTVAR');
 		private $link;
 
 		public function __construct(){
