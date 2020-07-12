@@ -189,4 +189,5 @@
 			# code...
 			break;
 	}
+	$conexion->cerrarConexion();
 ?>
