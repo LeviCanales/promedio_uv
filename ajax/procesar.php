@@ -1,7 +1,7 @@
 <?php
 	include_once("../class/class-conexion.php");
 	$conexion = new Conexion();
-	//$conexion->ejecutarInstruccion("SET NAMES 'utf8'");
+	$conexion->ejecutarInstruccion("SET NAMES 'utf8'");
 	switch ($_GET["accion"]) {
 		case '1':
 			$resultadoEstudiantes = $conexion->ejecutarInstruccion(
