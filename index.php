@@ -2,7 +2,7 @@
 	$titulo = 'Promedio Uv'
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title><?php echo $titulo; ?></title>
 	<meta charset="utf-8">
